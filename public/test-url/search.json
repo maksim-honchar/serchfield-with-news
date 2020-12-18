@@ -3,32 +3,32 @@
   "list": [
     {
       "id": "id-1",
-      "name": "Article-1",
-      "avatar": "some-url-to-public-image-1",
+      "name": "Some article about react",
+      "avatar": "./avatars/pic1.png",
       "author": {
-        "firstName": "FName",
-        "lastName": "LName",
-        "avatar": "some-url-to-public-image-2"
+        "firstName": "Jhon",
+        "lastName": "Smith",
+        "avatar": "./avatars/pic2.jpeg"
       }
     },
     {
       "id": "id-2",
-      "name": "Article-2",
-      "avatar": "some-url-to-public-image-3",
+      "name": "Something  about redux",
+      "avatar": "./avatars/pic3.png",
       "author": {
-        "firstName": "Fffff",
-        "lastName": "LLLL",
-        "avatar": "some-url-to-public-image-4"
+        "firstName": "Terrence",
+        "lastName": "Bishop",
+        "avatar": "./avatars/pic4.jpg"
       }
     },
     {
       "id": "id-3",
-      "name": "Article-3",
-      "avatar": "some-url-to-public-image-5",
+      "name": "About material-ui",
+      "avatar": "./avatars/pic5.png",
       "author": {
-        "firstName": "Fffff",
-        "lastName": "LLLL",
-        "avatar": "some-url-to-public-image-6"
+        "firstName": "Earnest",
+        "lastName": "Bowers",
+        "avatar": "./avatars/pic6.jpg"
       }
     }
   ],

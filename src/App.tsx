@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
+import "./App.scss";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "./app/store";
 import { addNews } from "./app/newsSlice";
-
 import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import Link from "@material-ui/core/Link";
-import ProTip from "./ProTip";
 
 import SearchField from "./components/SearchField";
 import FavoriteNews from "./components/FavoriteNews";
