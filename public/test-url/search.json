@@ -1,0 +1,16 @@
+{
+  "status": "200",
+  "list": [
+    {
+      "id": "id-1",
+      "name": "Article-1",
+      "avatar": "some-url-to-public-image-1",
+      "author": {
+        "firstName": "FName",
+        "lastName": "LName",
+        "avatar": "some-url-to-public-image-2"
+      }
+    }
+  ],
+  "total": "1"
+}
