@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { addNews } from "./features/search_filed/newsSlice";
 import { AppDispatch } from "./app/store";
+import { addNews } from "./app/newsSlice";
 
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
@@ -9,7 +9,8 @@ import Box from "@material-ui/core/Box";
 import Link from "@material-ui/core/Link";
 import ProTip from "./ProTip";
 
-import SearchField from "./features/search_filed/SearchField";
+import SearchField from "./components/SearchField";
+import FavoriteNews from "./components/FavoriteNews";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -23,5 +24,10 @@ export default function App() {
     dispatch(fetchNews());
   }, []);
 
-  return <Container>{<SearchField />}</Container>;
+  return (
+    <Container>
+      <SearchField />
+      <FavoriteNews />
+    </Container>
+  );
 }

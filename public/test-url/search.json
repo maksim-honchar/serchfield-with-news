@@ -10,7 +10,27 @@
         "lastName": "LName",
         "avatar": "some-url-to-public-image-2"
       }
+    },
+    {
+      "id": "id-2",
+      "name": "Article-2",
+      "avatar": "some-url-to-public-image-3",
+      "author": {
+        "firstName": "Fffff",
+        "lastName": "LLLL",
+        "avatar": "some-url-to-public-image-4"
+      }
+    },
+    {
+      "id": "id-3",
+      "name": "Article-3",
+      "avatar": "some-url-to-public-image-5",
+      "author": {
+        "firstName": "Fffff",
+        "lastName": "LLLL",
+        "avatar": "some-url-to-public-image-6"
+      }
     }
   ],
-  "total": "1"
+  "total": "3"
 }

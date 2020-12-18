@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { selectedData } from "./newsSlice";
+import { useSelector, useDispatch } from "react-redux";
+import { selectedData, addFavorites, addNews } from "../app/newsSlice";
 
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   },
 });
 
-interface INews {
+export interface INews {
   id: string;
   name: string;
   avatar: string;
@@ -24,11 +24,26 @@ interface INews {
 }
 
 export default function SearchField() {
-  // const [countries, setCountries] = useState<INews[]>([]);
-  const news = useSelector(selectedData);
   const classes = useStyles();
+  const dispatch = useDispatch();
+  const news = useSelector(selectedData);
 
-  console.log(news);
+  const handleChange = (
+    event: React.ChangeEvent<{}>,
+    newInputValue: string
+  ) => {
+    const filterNews = news.filter(
+      (element: INews) => element.name === newInputValue
+    );
+
+    const clearedList = news.filter(
+      (element: INews) => element.name !== newInputValue
+    );
+
+    dispatch(addFavorites(filterNews));
+    dispatch(addNews(clearedList));
+  };
+
   return (
     <Autocomplete
       id="news-select"
@@ -38,6 +53,7 @@ export default function SearchField() {
         option: classes.option,
       }}
       autoHighlight
+      onInputChange={handleChange}
       getOptionLabel={(option: INews) => option.name}
       renderOption={(option) => (
         <React.Fragment>
