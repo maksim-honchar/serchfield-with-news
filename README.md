@@ -1,4 +1,4 @@
-# Create React App example with TypeScript
+# Create React App  with TypeScript
 
 ## How to use
 
