@@ -3,7 +3,7 @@
   "list": [
     {
       "id": "id-1",
-      "name": "Some article about react",
+      "name": "Something about react",
       "avatar": "./avatars/pic1.png",
       "author": {
         "firstName": "Jhon",
@@ -23,7 +23,7 @@
     },
     {
       "id": "id-3",
-      "name": "About material-ui",
+      "name": "Article about material",
       "avatar": "./avatars/pic5.png",
       "author": {
         "firstName": "Earnest",

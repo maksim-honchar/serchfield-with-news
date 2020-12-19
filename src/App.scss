@@ -22,15 +22,14 @@ $borderBotColor: #e0e0e0;
 
 .articleAvatar {
   display: block;
-  width: 75px;
+  width: 40px;
   margin-left: 10px;
 }
 
 .authorAvatar {
   display: block;
-  width: 50px;
+  width: 25px;
   margin-right: 10px;
-  border: 1px solid;
 }
 
 .articleName {
@@ -42,20 +41,52 @@ $borderBotColor: #e0e0e0;
   margin-right: 10px;
 }
 
-@media (max-width: 500px) {
+.container {
+  text-align: center;
+}
+
+.searchField {
+  margin: auto;
+  margin-top: 20vh;
+  max-width: 600px;
+}
+
+.wrapper-favorites {
+  margin: auto;
+  margin-top: 10px;
+  border: 1px solid $borderBotColor;
+  min-height: 150px;
+  border-radius: 10px;
+  max-width: 565px;
+}
+
+.wrapper {
+  margin-top: 30px;
+}
+
+@media (max-width: 550px) {
+  .wrapper {
+    margin-top: 15px;
+  }
+
+  .wrapper-favorites {
+    width: 255px;
+  }
+  .searchField {
+    width: 300px;
+  }
   .card {
     width: 100%;
-    width: 300px;
+    width: 250px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .articleAvatar {
-    width: 50px;
+    width: 40px;
   }
   .authorAvatar {
-    width: 35px;
-    margin-left: 50px;
+    width: 20px;
   }
   .articleName {
     font-size: 1rem;
@@ -65,28 +96,28 @@ $borderBotColor: #e0e0e0;
   }
   .contentAuthor {
     width: 100%;
-    margin-top: 5px;
-    margin-left: 0px;
+    justify-content: flex-end;
   }
 }
 
 @media (max-width: 320px) {
-  .card {
-    width: 100%;
-    min-width: 250px;
+  .wrapper-favorites {
+    width: 200px;
   }
-}
-
-@media (max-width: 280px) {
+  .searchField {
+    width: 250px;
+  }
   .card {
     width: 100%;
     min-width: 200px;
   }
-  .articleAvatar {
-    width: 35px;
+  .articleName {
+    font-size: 0.8rem;
   }
-  .authorAvatar {
+  .contentAuthor {
+    display: none;
+  }
+  .articleAvatar {
     width: 25px;
-    margin-left: 50px;
   }
 }

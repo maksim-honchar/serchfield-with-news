@@ -4,7 +4,6 @@ import { useDispatch } from "react-redux";
 import { AppDispatch } from "./app/store";
 import { addNews } from "./app/newsSlice";
 import Container from "@material-ui/core/Container";
-
 import SearchField from "./components/SearchField";
 import FavoriteNews from "./components/FavoriteNews";
 
@@ -21,7 +20,7 @@ export default function App() {
   }, []);
 
   return (
-    <Container>
+    <Container className="container">
       <SearchField />
       <FavoriteNews />
     </Container>
