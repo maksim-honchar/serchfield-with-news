@@ -103,6 +103,7 @@ $borderBotColor: #e0e0e0;
 @media (max-width: 320px) {
   .wrapper-favorites {
     width: 200px;
+    min-height: 100px;
   }
   .searchField {
     width: 250px;
