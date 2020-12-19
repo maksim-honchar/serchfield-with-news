@@ -1,11 +1,8 @@
-import { Fragment } from "react";
 import { useSelector } from "react-redux";
 import { selectedFavorites } from "../app/newsSlice";
 import { INews } from "./SearchField";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import SearchCard, { ISearchedCardProps } from "./SearchCard";
+import SearchCard from "./SearchCard";
 
 export default function FavoriteNews() {
   const favorites = useSelector(selectedFavorites);

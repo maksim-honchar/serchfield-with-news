@@ -1,4 +1,3 @@
-import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectedData, addFavorites, addNews } from "../app/newsSlice";
 import SeacrhCard from "./SearchCard";
@@ -45,15 +44,13 @@ export default function SearchField() {
         onInputChange={handleChange}
         getOptionLabel={(option: INews) => option.name}
         renderOption={(option) => (
-          <React.Fragment>
-            <SeacrhCard
-              name={option.name}
-              avatar={option.avatar}
-              authorAvatar={option.author.avatar}
-              authorFirstName={option.author.firstName}
-              authorLastName={option.author.lastName}
-            />
-          </React.Fragment>
+          <SeacrhCard
+            name={option.name}
+            avatar={option.avatar}
+            authorAvatar={option.author.avatar}
+            authorFirstName={option.author.firstName}
+            authorLastName={option.author.lastName}
+          />
         )}
         renderInput={(params) => (
           <TextField

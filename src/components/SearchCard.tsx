@@ -1,5 +1,3 @@
-import { Theme, createStyles, makeStyles } from "@material-ui/core/styles";
-
 export interface ISearchedCardProps {
   name: string;
   avatar: string;
